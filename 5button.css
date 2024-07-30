@@ -1,0 +1,45 @@
+body{
+    background: rgb(41, 41, 41);
+}
+
+.nav{
+    display: flex;
+    position: relative;
+    width: 100vw;
+    height: 120px;
+    background-color: aliceblue;
+    padding-top:10px ;
+    top: 0px;
+    left: 0px;
+}
+
+.buttondiv{
+    width: 90vw;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0);
+    margin: 20% 5%;
+    transition: 0.5s;
+    flex-wrap: wrap;
+}
+
+.button{
+    background-color: transparent;
+    border: 2px solid aliceblue;
+    border-radius: 100px; /*ok chx?*/
+    width: 100px;
+    height: 100px;
+    scale:1;
+    transition: 0.5s cubic-bezier(0,1.24,1,.98);
+}
+
+.button:hover{
+    scale: 0.98;
+    background-color: rgb(255, 255, 255);
+}
+
+.button:active{
+    scale: 0.95;
+    transition: 0.1s;
+    opacity: 50%;
+}
